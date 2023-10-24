@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    
+}
+
+header {
+    background-color: rgb(23, 235, 23);
+    border-bottom: 10px ridge rgb(176, 238, 6);
+}
+
+
+#imagens-topo{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+
+i#burguer {
+    background-color: rgb(33, 180, 111);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: rgba(201, 238, 38, 0.795);
+    color: black;
+}
+
+menu {
+    display: none;
+    
+}
+
+menu > ul {
+    list-style-type: none;
+    
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(33, 180, 111);
+    color: white;
+    border-top: 2px solid rgb(33, 224, 15);
+}
+
+menu > ul > li > a:hover {
+    background-color:  rgba(179, 196, 25, 0.527);
+}
+
+
