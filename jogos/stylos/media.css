@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* celular */
+
+@media screen and (max-width: 768px) {
+   @media screen and (orientation: portrait) {
+        body {
+            background-color: yellow; 
+       }
+
+       
+
+
+
+
+
+
+
+
+   }
+
+   @media screen and (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+}
+
+}
+
+/* tablet */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-color: red;
+       }
+}
+
+/* desktops */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-color: green;
+       }
+}
+
+/* grandes telas */
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-color: black;
+       }
+}
