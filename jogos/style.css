@@ -7,7 +7,10 @@
     padding: 0px;
 }
 
-body, html {
+body {
+    background-color: rgb(211, 248, 220);
+    background-image: url(imagens/fundo9.webp);
+    
     
 }
 
@@ -66,4 +69,29 @@ menu > ul > li > a:hover {
 li a.ativo {
     background-color: rgba(201, 238, 38, 0.795);
 }
+
+
+#corpo {
+    
+    border: 3px solid yellow;
+    width: 700px;
+    height: 400px;
+   
+
+}
+
+.imagens-corpo {
+    text-align: center;
+}
+
+
+#rodape {
+    display: flex;
+    margin: 20px;
+    padding: 100px;
+    border: 3px solid blue;
+    justify-content: flex-end;
+    
+}
+
 
