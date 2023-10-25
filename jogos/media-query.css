@@ -62,7 +62,30 @@ Grandes telas: acima de 1200px
 
     menu {
         text-align: center;
-    }   
+        
+    }  
+    
+    header {
+        margin-bottom: 170px;
+    }
+    
+    .container-slider {
+        display: flex;
+        width: 100%;
+        min-height: 30vh;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        
+    }
+    
+    .container-imagens {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 800%;
+    }
   
 }
 
@@ -76,5 +99,27 @@ Grandes telas: acima de 1200px
     menu {
         text-align: center;
     }   
+
+    header {
+        margin-bottom: 400px;
+    }
+    
+    .container-slider {
+        display: flex;
+        width: 100%;
+        min-height: 30vh;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        
+    }
+    
+    .container-imagens {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 800%;
+    }
 
 }

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
+    <title>jogos</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
+    <script src="script.js" defer></script>
+
 </head>
+
+
 <body onresize="mudouTamanho()">
     <header>
         <div id="imagens-topo">
@@ -27,11 +31,17 @@
         </menu>
     </header>
    
-    <div id="corpo">
-        <div class="imagens-corpo">
-            
-
+    <div class="container-slider">
+        <button onclick="nextSlider()"><i id="prev-button" class="material-icons">arrow_back_ios</i></button>
+        <div class="container-imagens">
+            <img src="imagens/imag1.png" alt="" class="slider on">
+            <img src="imagens/img2.png" alt="" class="slider">
+            <img src="imagens/img3.png" alt="" class="slider">
+            <img src="imagens/img4.png" alt="" class="slider">
+            <img src="imagens/img5.png" alt="" class="slider">
+            <img src="imagens/img6.png" alt="" class="slider">
         </div>
+        <button onclick="prevSlider()"><i id="next-button" class="material-icons">arrow_forward_ios</i></button>
 
     </div>
 

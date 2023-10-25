@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(211, 248, 220);
-    background-image: url(imagens/fundo9.webp);
+   
     
     
 }
@@ -70,18 +70,48 @@ li a.ativo {
     background-color: rgba(201, 238, 38, 0.795);
 }
 
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
-#corpo {
+.container-imagens {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    border: 3px solid yellow;
-    width: 700px;
-    height: 400px;
-   
+    width: 800%;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
 
 }
 
-.imagens-corpo {
-    text-align: center;
+.on {
+    opacity: 1;
+}
+
+#prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
 }
 
 
