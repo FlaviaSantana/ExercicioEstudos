@@ -29,14 +29,35 @@ Grandes telas: acima de 1200px
     main {
         width: 768px;
     }
+
+    footer {
+        height: 21vw; 
+        background-size: auto; 
+        
+    }
+    
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        
+    }
+
+    .contato h1 {
+        font-size: 1em;
+        margin-bottom: 15px;
+     }
+
+     .contato  p {
+        font-size: 1.3em;
+     }
 }
 
 /* tablet */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    body {
-        background-color: red;
-       }
+   
 
     menu {
         text-align: center;
@@ -50,48 +71,52 @@ Grandes telas: acima de 1200px
         text-decoration: none;
         color: white; 
     }
+
+    .contato h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+     }
+
+     .contato  p {
+        font-size: 1.3em;
+     }
 }      
 
 
 /* desktops */
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-    body {
-        background-color: green;
-       }
+@media screen and (min-width: 993px) /*and (max-width: 1200px)*/ {
+    
 
     menu {
         text-align: center;
         
+        
     }  
     
-    header {
-        margin-bottom: 170px;
+    #itens ul a {
+        font-size: 1.5vw;
+        display: block;
+        padding: 0.3em 1em;
+        line-height: center;
+        text-decoration: none;
+        color: white; 
     }
-    
-    .container-slider {
-        display: flex;
-        width: 100%;
-        min-height: 30vh;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
-        
-    }
-    
-    .container-imagens {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        width: 800%;
-    }
+   
+    .contato h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+     }
+
+     .contato  p {
+        font-size: 1.3em;
+     }
   
 }
 
 /* grandes telas */
 
-@media screen and (min-width: 1201px) {
+/*@media screen and (min-width: 1201px) {
     body {
         background-color: black;
        }
@@ -100,26 +125,5 @@ Grandes telas: acima de 1200px
         text-align: center;
     }   
 
-    header {
-        margin-bottom: 400px;
-    }
-    
-    .container-slider {
-        display: flex;
-        width: 100%;
-        min-height: 30vh;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
-        
-    }
-    
-    .container-imagens {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        width: 800%;
-    }
-
-}
+   
+} */
