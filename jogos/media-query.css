@@ -13,10 +13,7 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 768px) {
 
-    body {
-        background-color: yellow; 
-    }
-
+    
     i#burguer {
         display: none;
     }
@@ -41,15 +38,20 @@ Grandes telas: acima de 1200px
         background-color: red;
        }
 
-       #topo ul a {
+    menu {
+        text-align: center;
+    }   
+
+    #itens ul a {
         font-size: 2.5vw;
         display: block;
         padding: 0.6em 1.9em;
         line-height: center;
         text-decoration: none;
         color: white; 
-        
-}
+    }
+}      
+
 
 /* desktops */
 
@@ -57,6 +59,11 @@ Grandes telas: acima de 1200px
     body {
         background-color: green;
        }
+
+    menu {
+        text-align: center;
+    }   
+  
 }
 
 /* grandes telas */
@@ -65,4 +72,9 @@ Grandes telas: acima de 1200px
     body {
         background-color: black;
        }
+
+    menu {
+        text-align: center;
+    }   
+
 }

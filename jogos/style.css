@@ -63,4 +63,7 @@ menu > ul > li > a:hover {
     background-color:  rgba(179, 196, 25, 0.527);
 }
 
+li a.ativo {
+    background-color: rgba(201, 238, 38, 0.795);
+}
 
