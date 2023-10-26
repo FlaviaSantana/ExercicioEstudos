@@ -10,10 +10,15 @@
     width: 100%;
     height: 100%;
 }
-
+ 
 body {
     background-image: url(imagens/fundo5.jpg);
     background-color: rgb(211, 248, 220);
+}
+
+
+
+body {
     min-height: 100%;
     display: flex;
     flex-direction: column;  
@@ -24,6 +29,8 @@ header {
     background-color: rgb(23, 235, 23);
     border-bottom: 10px ridge rgb(176, 238, 6);
 }
+
+
 
 #imagens-topo{
     display: flex;
@@ -125,7 +132,25 @@ li a.ativo {
     height: 100%;
 }
 
+section {
+    background-image: url(imagens/fundo-mosquito1.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
+}
 
+.logo-mosquito {
+    width: 100vw;
+}
+
+.caixa-selecao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
 
 footer {
    position: relative;
