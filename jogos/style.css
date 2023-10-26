@@ -12,13 +12,11 @@ html {
 }
 
 body {
+    background-image: url(imagens/fundo5.jpg);
     background-color: rgb(211, 248, 220);
     min-height: 100%;
     display: flex;
-    flex-direction: column;
-    
-   
-    
+    flex-direction: column;  
     
 }
 
@@ -27,7 +25,6 @@ header {
     border-bottom: 10px ridge rgb(176, 238, 6);
   
 }
-
 
 
 #imagens-topo{
@@ -132,14 +129,12 @@ li a.ativo {
 footer {
    margin: 0px;
    padding: 0px;
-   background-image: url(imagens/fundo-verde.jpg) ;
    width: 100%;
-   height: 21vw; 
- 
-    
+       
 }
 
 .rodape {
+    background-image: url(imagens/fundo-verde.jpg) ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -148,7 +143,7 @@ footer {
 }
 
 .boneco2 img {
-    width: 15vw;
+    width: 20vw;
     
 
 }
@@ -156,10 +151,17 @@ footer {
 .contato {
    width: 60vw;
    text-align: center;
-   font-size: 1.2em;
    color: beige;
 
    
+}
+
+.contato h1 {
+    font-size: 4vw;
+}
+
+.contato p {
+    font-size: 3vw;
 }
 
 .item1 {

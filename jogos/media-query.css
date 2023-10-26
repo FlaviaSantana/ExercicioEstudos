@@ -44,14 +44,7 @@ Grandes telas: acima de 1200px
         
     }
 
-    .contato h1 {
-        font-size: 1em;
-        margin-bottom: 15px;
-     }
-
-     .contato  p {
-        font-size: 1.3em;
-     }
+    
 }
 
 /* tablet */
@@ -103,14 +96,7 @@ Grandes telas: acima de 1200px
         color: white; 
     }
    
-    .contato h1 {
-        font-size: 2em;
-        margin-bottom: 15px;
-     }
-
-     .contato  p {
-        font-size: 1.3em;
-     }
+   
   
 }
 
