@@ -1,4 +1,3 @@
-
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
@@ -35,4 +34,3 @@ function prevSlider() {
 
 btnNext.addEventListener('click', nextSlider)
 btnNext.addEventListener('click', prevSlider)
-

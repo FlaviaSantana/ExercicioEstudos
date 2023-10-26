@@ -2,12 +2,12 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-
     margin: 0px;
     padding: 0px;
 }
 
-html {
+ html {
+    width: 100%;
     height: 100%;
 }
 
@@ -17,26 +17,24 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;  
-    
 }
+
 
 header {
     background-color: rgb(23, 235, 23);
     border-bottom: 10px ridge rgb(176, 238, 6);
-  
 }
-
 
 #imagens-topo{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 }
 
 
 
 i#burguer {
-    background-color: rgb(33, 180, 111);
+    background-color: rgb(33, 180, 111);;
     color: white;
     display: block;
     text-align: center;
@@ -51,12 +49,10 @@ i#burguer:hover {
 
 menu {
     display: none;
-    
 }
 
 menu > ul {
     list-style-type: none;
-    
 }
 
 menu > ul > li > a {
@@ -70,12 +66,15 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color:  rgba(179, 196, 25, 0.527);
+    background-color: rgba(179, 196, 25, 0.527);
 }
 
 li a.ativo {
     background-color: rgba(201, 238, 38, 0.795);
 }
+
+
+
 
 .container-slider {
     display: flex;
@@ -126,10 +125,12 @@ li a.ativo {
     height: 100%;
 }
 
+
+
 footer {
-   margin: 0px;
-   padding: 0px;
+   position: relative;
    width: 100%;
+   height: 100%;
        
 }
 
@@ -137,6 +138,7 @@ footer {
     background-image: url(imagens/fundo-verde.jpg) ;
     display: flex;
     justify-content: space-around;
+    
     align-items: center;
 
     
@@ -186,5 +188,4 @@ footer {
     text-align: center;
 
 }
-
 

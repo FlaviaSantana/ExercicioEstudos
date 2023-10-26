@@ -9,11 +9,8 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-/* celular */
-
 @media screen and (min-width: 768px) {
 
-    
     i#burguer {
         display: none;
     }
@@ -31,20 +28,16 @@ Grandes telas: acima de 1200px
     }
 
     footer {
-        height: 21vw; 
-        background-size: auto; 
-        
+        height: 21vw;
+        background-size: auto;
     }
-    
+
     .rodape {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    
-        
-    }
 
-    
+    }
 }
 
 /* tablet */
@@ -66,20 +59,24 @@ Grandes telas: acima de 1200px
     }
 
     .contato h1 {
-        font-size: 2em;
+        font-size: 2.5vw;
         margin-bottom: 15px;
      }
 
      .contato  p {
-        font-size: 1.3em;
+        font-size: 2vw;
+        margin-bottom: 15px;
      }
 }      
 
 
 /* desktops */
 
-@media screen and (min-width: 993px) /*and (max-width: 1200px)*/ {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
     
+    body {
+        background-color: red;
+    }
 
     menu {
         text-align: center;
@@ -88,28 +85,51 @@ Grandes telas: acima de 1200px
     }  
     
     #itens ul a {
-        font-size: 1.5vw;
+        font-size: 2vw;
         display: block;
-        padding: 0.3em 1em;
+        padding: 0.6em 1.9em;
         line-height: center;
         text-decoration: none;
         color: white; 
     }
    
-   
+    .contato h1 {
+        font-size: 3vw;
+        margin-bottom: 15px;
+     }
+
+     .contato  p {
+        font-size: 2vw;
+        margin-bottom: 20px;
+     }
   
 }
 
 /* grandes telas */
 
-/*@media screen and (min-width: 1201px) {
-    body {
-        background-color: black;
-       }
+@media screen and (min-width: 1201px) {
+    
 
     menu {
         text-align: center;
     }   
 
-   
-} */
+    #itens ul a {
+        font-size: 1.7vw;
+        display: block;
+        padding: 0.6em 1.9em;
+        line-height: center;
+        text-decoration: none;
+        color: white; 
+    }
+
+    .contato h1 {
+        font-size: 3vw;
+        margin-bottom: 15px;
+     }
+
+     .contato  p {
+        font-size: 2vw;
+        margin-bottom: 20px;
+     }
+} 
