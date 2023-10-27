@@ -1,7 +1,169 @@
 @charset "UTF-8";
 
-html, body {
- width: 100%;
- min-height: 100%;
+*{
+    margin: 0;
 }
 
+body {
+    background-color: rgb(4, 117, 4);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/* celular */
+
+@media screen and (max-width: 768px) {
+    @media screen and (orientation: portrait) {
+                
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-retrato-p.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+ 
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    }
+ 
+    @media screen and (orientation: landscape) {
+       
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-paisagem-p.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+    }
+ 
+ }
+ 
+ /* tablet */
+ 
+ @media screen and (min-width: 769px) and (max-width: 992px) {
+    @media screen and (orientation: portrait) {
+                
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-retrato-tablet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+    }
+ 
+    @media screen and (orientation: landscape) {
+       
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-paisagem-tablet.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+
+    }
+ }
+ 
+ /* desktops */
+ 
+ @media screen and (min-width: 993px) and (max-width: 1200px) {
+    @media screen and (orientation: portrait) {
+                
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-retrato-desk.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    }
+ 
+    @media screen and (orientation: landscape) {
+       
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-paisagem-desk.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+    }
+ }
+ 
+ /* grandes telas */
+ 
+ @media screen and (min-width: 1201px) {
+    @media screen and (orientation: portrait) {
+                
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-retrato-xl.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+    }
+ 
+    @media screen and (orientation: landscape) {
+       
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(imagens/mosquito-paisagem-xl.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+    }
+ }
