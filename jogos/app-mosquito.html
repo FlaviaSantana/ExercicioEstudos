@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Mosquito</title>
+	<link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="estilo-mosquito.css">
-       <script src="app-mosquito.js" defer></script>
+       <script src="app-mosquito.js" ></script>
 
 </head>
 
 <body onresize="ajustaTamanhoPalcoJogo()">
-    
-    <div id="container">
-		<img class="mosquito1" src="imagens/mosquito.png" alt="mosquito" >
+
+		
                  
 
 		<div class="painel">
@@ -27,13 +27,15 @@
 			<div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
 		</div>
 
-		
-    </div>
+
     
-   <script>
-		var	
+ <script>
+		
+
+		setInterval(function() {
+			posicaoRandomica()
+		}, 1000)
 	</script>
-        
     
    
 </body>
