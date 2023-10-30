@@ -4,6 +4,22 @@ var largura = 0
 var posicaox = 0
 var posicaoy = 0
 var vidas = 1
+var tempo = 50
+
+var criaMosquitoTempo = 2000
+
+var nivel = window.location.search
+nivel = nivel.replace('?','')
+
+if(nivel === 'nivel1') {
+   criaMosquitoTempo = 2000
+
+}else if (nivel === 'nivel2') {
+   criaMosquitoTempo = 1500
+}else if (nivel === 'nivel3') {
+   criaMosquitoTempo = 1000
+}
+
 
 function ajustaTamanhoPalcoJogo() {
    altura = window.innerHeight
@@ -13,6 +29,17 @@ function ajustaTamanhoPalcoJogo() {
 }
 
   ajustaTamanhoPalcoJogo()
+
+  var cronometro = setInterval(function() {
+   tempo -= 1
+   if(tempo < 0) {
+      clearInterval(cronometro)
+      clearInterval(criaMosquito)
+      window.location.href = 'mosquito-vitoria.html'
+   } else {
+   document.getElementById('cronometro').innerHTML = tempo
+   }
+  }, 1000)
 
 function posicaoRandomica() {
 

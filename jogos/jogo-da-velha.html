@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="estilo-velha.css">
+    <script src="app-velha.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="imagens/logo-velha.png" alt="">
+        </div>
+        <div class="personagem">
+            <img class="img1" src="imagens/casal.png" alt="">
+            <img class="img2" src="imagens/zootopia.png" alt=""> 
+        </div>
+        <div class="caixa-selecao">
+            <div>
+            <select name="nivel" id="nivel">
+                <option value="">--- Selecione um nivel ---</option>
+                <option value="nivel1">Nivel 1</option>
+                <option value="nivel2">Nivel 2</option>
+                <option value="nivel3">Nivel 3</option>
+            </select>
+            </div>
+            <div>
+            <button  class="iniciar" onclick="iniciarJogo()">Iniciar</button>
+            </div>
+        </div>
+            
+    </div>
+    
+</body>
+</html>

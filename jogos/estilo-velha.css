@@ -1,0 +1,49 @@
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(223, 111, 20), rgb(248, 185, 10));
+    
+}
+#container {
+    
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center; 
+   align-self: center; 
+   margin: auto;
+   padding: auto;
+
+}
+
+.logo {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 60vw;
+    height: auto;
+    
+}
+
+.personagem {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.img1 {
+    width: 50vw;
+    height: auto;
+
+}
+
+.img2 {
+    width: 60vw;
+    height: auto;
+}

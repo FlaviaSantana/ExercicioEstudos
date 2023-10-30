@@ -5,14 +5,13 @@
 }
 
 html {
-	
+cursor: url(imagens/raquete.png) 30 30, auto;	
   
 
 }
 
 body {
     background-color: rgb(4, 117, 4);
-    cursor: url(imagens/raquete.png) 30 30, auto;
     width: 100vw;
     height: 100vh;
     margin: 0px;
