@@ -5,35 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="estilo-velha.css">
-    <script src="app-velha.js"></script>
 
 </head>
 
 <body>
 
     <div class="container">
+
         <div class="logo">
-            <img src="imagens/logo-velha.png" alt="">
+            <img class= "img1" src="imagens/logo-velha.png" alt="">
         </div>
-        <div class="personagem">
-            <img class="img1" src="imagens/casal.png" alt="">
-            <img class="img2" src="imagens/zootopia.png" alt=""> 
+
+        <div class="boneco1">
+            <img class="img2" src="imagens/boneco3.png" alt="">
+            <img class="img4" src="imagens/boneco4.png" alt=""> 
         </div>
-        <div class="caixa-selecao">
+
+        <div class="boneco2">
             <div>
-            <select name="nivel" id="nivel">
-                <option value="">--- Selecione um nivel ---</option>
-                <option value="nivel1">Nivel 1</option>
-                <option value="nivel2">Nivel 2</option>
-                <option value="nivel3">Nivel 3</option>
-            </select>
+            <img class="img3" src="imagens/boneco5.png" alt="">
             </div>
-            <div>
-            <button  class="iniciar" onclick="iniciarJogo()">Iniciar</button>
+            <div class="selecao">
+                <div>
+                    <select name="nivel" id="nivel">
+                        <option value="">--- Selecione um nivel ---</option>
+                        <option value="nivel1">Nivel 1</option>
+                        <option value="nivel2">Nivel 2</option>
+                        <option value="nivel3">Nivel 3</option>
+                    </select>
+                </div>
+                <div class="botao">
+                     <button onclick="iniciarJogo()">Jogar</button>
+                </div>
             </div>
+        </div> 
+        
+        
+        <div class="pokemon">
+            <img class="img5" src="imagens/pokemon1.png" alt="">
+            <img class="img6" src="imagens/pokemon2.png" alt="">
+            <img class="img7" src="imagens/pokemon3.png" alt="">
         </div>
+
+        
             
     </div>
+
+    <script>
+
+        function iniciarJogo() {
+
+            var nivel = document.getElementById('nivel').value
+          
+            if (nivel === '') {
+                alert('Selecione um nivel valido')
+
+            } else if (nivel === 'nivel1') {
+                return  window.location.href = "velha-nivel1.html"
+           
+            } else if (nivel === 'nivel2') {
+                return  window.location.href = "velha-nivel2.html"
+            
+            } else if (nivel === 'nivel3') {
+                return  window.location.href = "velha-nivel3.html"
+
+            }
+
+
+           
+        }
+
+    </script>
     
 </body>
 </html>

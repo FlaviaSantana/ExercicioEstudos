@@ -8,42 +8,82 @@ body {
     background-image: linear-gradient(to right, rgb(223, 111, 20), rgb(248, 185, 10));
     
 }
-#container {
-    
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   align-content: center; 
-   align-self: center; 
-   margin: auto;
-   padding: auto;
 
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+#jogo {
+    width: 90vw;
+    text-align: center;
 }
 
 .logo {
     text-align: center;
-    margin: auto;
-    padding: auto;
-    width: 60vw;
-    height: auto;
+}
+
+.boneco1 {
+    text-align: center;
+}
+
+.boneco2 {
+    display: flex;
+    align-items: center;
+}   
+
+.selecao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+select {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0.5em 1.9em;
+    font-size: 3vw;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 1em 1em;
+    font-size: 3vw;
+    border-radius: 10px;
+    background-color: rgb(168, 23, 23);
+    color: white;
+    border: 3px ridge black;
+    cursor: pointer;
     
 }
 
-.personagem {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-
-}
-
 .img1 {
-    width: 50vw;
-    height: auto;
-
+    width: 90vw;
 }
 
-.img2 {
-    width: 60vw;
-    height: auto;
+.img2, .img4 {
+    width: 40vw;
+}
+
+.img3 {
+    width: 45vw;
+}
+
+.img5, .img6, .img7 {
+    width: 30vw;
+}
+
+#nivel {
+    width: 50vw;
 }
