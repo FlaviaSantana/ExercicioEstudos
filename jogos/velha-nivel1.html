@@ -2,120 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Jogo da Velha</title>
-    <script src="app-velha.js"></script>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+           font-family: cursive; 
+        }
 
         body {
-            background-image: linear-gradient(to right, rgb(223, 111, 20), rgb(248, 185, 10));
             width: 100vw;
             height: 100vh;
-            
-        }
-
-        .container {
-            display: grid;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-content: center;
-            justify-items: center;
+            display: flex;
             align-items: center;
-            grid-template-columns: repeat(3, auto);
-            border-bottom: 0px;
-            
+            justify-content: center;
+            background-image: linear-gradient(to right, rgb(223, 111, 20), rgb(248, 185, 10));
         }
 
-        .itens {
-            width: 100px;
-            height: 100px;
+        main {
+            display: flex;
+            flex-direction: column;
+            
+            
+
+        }
+
+       
+
+        .game {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            
+
+        }
+
+        .game button {
+            width: 20vw;
+            height: 20vw;
+            background: rgba(223, 8, 8, 0.11);
             border: 5px ridge red;
+            box-shadow: 10px 10px rgb(102, 5, 5);
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .botoes {
             display: flex;
             justify-content: center;
-            align-items: center;
-            box-shadow: 10px 10px rgb(102, 5, 5);
-           
+
         }
 
-        
-
-         button {
-            width: 100px;
-            height: 100px;
-            margin: 0px;
+        .botao {
+            
+            padding: 0.6em 0.6em;
+            font-size: 2vw;
+            border-radius: 10px;
+            background-color: rgb(168, 23, 23);
+            color: white;
+            border: 3px ridge black;
             cursor: pointer;
-            font-size: 50px;
-            background: rgba(223, 8, 8, 0.11);
-            border: none;
-         }
+            width: 15vw;
+            margin-right: 30px;
 
-         .botao {
-        text-align: center;
-        margin-right: 20px;
-        padding: 0.6em 0.6em;
-        font-size: 2vw;
-        border-radius: 10px;
-        background-color: rgb(168, 23, 23);
-        color: white;
-        border: 3px ridge black;
-        cursor: pointer;
-        width: 150px;
-        margin-top: 0px;
-}
-
-        .mens {
-                display: flex;
-                margin-top: 0px;
-                margin-bottom: 0px;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
         }
-        
+
     </style>
-    
 </head>
 <body>
-
-    <div class="container">
-        <div class="itens" >
-            <button data-i="1"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="2"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="3"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="4"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="5"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="6"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="7"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="8"></button>
-        </div>
-        <div class="itens" >
-            <button data-i="9"></button>
-        </div>
-        <h2 class="mensagem">hhy</h2>
     
+</body>
+
+<main>
+    
+    <div class="game">
+        <button data-i="1"></button>
+        <button data-i="2"></button>
+        <button data-i="3"></button>
+        <button data-i="4"></button>
+        <button data-i="5"></button>
+        <button data-i="6"></button>
+        <button data-i="7"></button>
+        <button data-i="8"></button>
+        <button data-i="9"></button>
+
     </div>
 
-    <div  class="mens">
-        
+    <h2 class="currentPlayer"></h2>
+
+    <div class="botoes">
         <button class="botao">Jogar Novamente</button>
         <button class="botao">Home</button>
     </div>
-    
-</body>
+
+
+</main>
+<script src="app-velha.js"></script>
 </html>
