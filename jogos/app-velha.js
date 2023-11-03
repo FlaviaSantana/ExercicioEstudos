@@ -16,7 +16,7 @@ jogador2.style.position = 'absolute'
 
 
 let selected;
-let player = jogador1;
+let player = 'X';
 
 
 
@@ -54,13 +54,13 @@ function newMove(e) {
         check();
     }, [100]);
 
-    player = player === jogador1 ? jogador2 : jogador1;
+    player = player === 'X' ? 'O' : 'X';
     currentPlayer.innerHTML ='Jogador da Vez: ' + player;
     
 }
 
 function check() {
-    let playerLastMove = player === jogador1  ? jogador2 : jogador1;
+    let playerLastMove = player === 'X'  ? 'O' : 'X';
 
     const itens = selected
     .map((item, i) => [item, i])
@@ -69,7 +69,7 @@ function check() {
 
     for (pos of positions) {
         if (pos.every((item) => itens.includes(item))) {
-            alert('O jogador ' + playerLastMove + 'ganhou!');
+            alert('O jogador ' + ' ' + playerLastMove + 'ganhou!');
             init();
             return;
         }
