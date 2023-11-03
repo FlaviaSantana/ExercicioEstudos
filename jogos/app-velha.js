@@ -4,8 +4,21 @@
 
 const currentPlayer = document.querySelector(".currentPlayer");
 
+let jogador1 = document.createElement('img')
+jogador1.src = 'imagens/x.png'
+jogador1.className = 'img-j'
+jogador1.style.position = 'absolute'
+let jogador2 = document.createElement('img')
+jogador2.src = 'imagens/o.png'
+jogador2.className = 'img-j'
+jogador2.style.position = 'absolute'
+
+
+
 let selected;
-let player = "X";
+let player = jogador1;
+
+
 
 let positions = [
     [1, 2, 3],
@@ -41,13 +54,13 @@ function newMove(e) {
         check();
     }, [100]);
 
-    player = player === "X" ? "O" : "X";
+    player = player === jogador1 ? jogador2 : jogador1;
     currentPlayer.innerHTML ='Jogador da Vez: ' + player;
     
 }
 
 function check() {
-    let playerLastMove = player === "X"  ? "O" : "X";
+    let playerLastMove = player === jogador1  ? jogador2 : jogador1;
 
     const itens = selected
     .map((item, i) => [item, i])
