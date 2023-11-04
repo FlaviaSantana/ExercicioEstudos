@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens e midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em vaios dispositivos diferentes ou simplesmente aumente e diminua seu navegador </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <h2>primeira maneira</h2>
+    <audio src="midia/happy-mistake.mp3" controls ></audio>
+    <!-- MP3  WAV  OGG  -->
+
+    <br>
+    <br>
+    <h2>segunda maneira</h2>
+    <!-- autoao colocar nada - tem que carregar tudo para comecar/ metadata - carrega as informacoes basicas como duracao e so carrega depois de dar o play/ none nao carrega nada-->
+    <audio  preload="metadata" controls>
+       <source src="midia/sunny-day.mp3" type="audio/mpeg">
+       <!-- <source src="midia/sunny-day.ogg" type="audio/ogg">
+       <source src="midia/sunny-day.wav" type="audio/wav"> -->
+       <p>infelizmente seu navegador nao consegue reproduzir audio <a href="midia/sunny-day.mp3">click aqui</a>para baixar o arquivo</p>
+    </audio>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Inserindo Videos</h1>
+    <h2>Videos hospedados localmente</h2>
+    <h3>primeira maneira</h3>
+    <p>este video esta hospedado no meu proprio servidor</p>
+    <video src="midia/meu-video1.mp4" width="500" controls autoplay loop></video>
+    <h3>segunda maneira</h3>
+    <video width="500" poster="imagens/limoes-capa.png" controls >
+        <source src="midia/meu-video1.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador nao tem compatibilidade com reproducao de video</p>
+
+    </video>
+
+    <h2>Inserido videos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=--BwdOH5KWDU1pcr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- pode inserir tbm do vimeo mas e pago, porem tem mais controle de que vai assistir-->
+       
+</body>
+</html>
