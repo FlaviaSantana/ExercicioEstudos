@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+    <style>
+        body {
+            background-color: rgb(96, 226, 226);
+            font-size: 4em;
+            color: white;
+            text-align: center;
+        }
+        input { 
+            
+            font-size: 1em;
+            color: white;
+            background-color: red;
+
+        }
+    </style>
+
+</head>
+<body>
+   <!--  <div> 
+    <label>Digite seu Nome:</label>
+    <input type="text" id="nome">
+    <input type="button" value="Enviar" id="enviar" onclick="nome()">
+
+    </div> --> 
+
+   <div id="nome"></div>
+
+    <div>
+
+    <label for="">Quer saber as horas?</label>
+    <input type="button" value="Click aqui" onclick="hora()">
+    <div id="hora"></div>
+
+    </div>
+
+        <script>
+
+           
+                /*var nome = document.getElementById('nome').value
+                var pessoa = document.getElementById('nome2')
+                pessoa.innerHTML = ` Olá ${nome} !!!` */
+
+              var nome = window.prompt('Qual seu nome?')
+               var nome2 = document.getElementById('nome')
+               nome2.innerHTML = ` <h1>Olá ${nome} !!!</h1`
+            
+
+            function hora() {
+                var hora = 3
+                var agora = new Date()
+                var hora = agora.getHours() 
+                var minutos = agora.getMinutes()
+                var res = document.getElementById('hora')
+                res.innerHTML = `<h2>Agora é ${hora} horas e ${minutos} minutos.</h2>`
+               
+
+
+                if (hora > 4 && hora < 12) {
+                    res.innerHTML += '<h1>Bom Dia!!!</h1'
+                } else if (hora > 12 && hora <= 18 ) {
+                    res.innerHTML += '<h1>Boa Tarde!!!</h1>'
+                } else if ( hora >= 19 &&hora < 24) {
+                    res.innerHTML += '<h1>Boa Noite !!!</h1'
+                } else {
+                    res.innerHTML += '<h1>Boa Madrugada !!!</h1>'
+                }
+
+            }
+        </script>
+
+</body>
+</html>

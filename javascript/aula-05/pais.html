@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual seu País?</h1>
+
+   Dijite o pais que você mora: <input type="text"  id="text">
+   Dijite onde voce nasceu: <input type="text" id="nasc">
+   <input type="button"  value="Verificar" onclick="verificar()">
+   <div id="res"></div>
+   <script>
+    function verificar () {
+    var pais = document.getElementById('text').value
+    var nascimento = document.getElementById('nasc').value
+    var res = document.getElementById('res')
+    if (pais == nascimento) {
+
+        res.innerHTML = `<p>Você é natural !</p>`
+    } else {
+        res.innerHTML = `<p>Você é estrangeiro!</p>`
+    }
+}
+   </script>
+</body>
+</html>

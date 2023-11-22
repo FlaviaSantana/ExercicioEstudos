@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let quadrado1 = function(x = 5) {
+        return x * x
+    }
+    document.write(`resultado = ${quadrado1()} <br>`)
+
+   
+    /*
+    let quadrado2 = (y) => {
+       
+        return y * Y
+    }
+
+    console.log(`resultado = ${quadrado2(2)}`)
+
+    document.write(`resultado = ${quadrado2(2)}`)
+    nao funciona */
+
+    /*let quadrado2 = y => y * Y //return implicito
+    document.write(quadrado2(3)) 
+    nao funciona */
+   
+
+    let parOuImpar1 = function(numero) {
+        if(numero % 2 === 0) {
+            return 'par'
+        } else {
+            return 'impar'
+        }
+    }
+
+    document.write(parOuImpar1(9))
+    document.write(`<br>`)
+
+    let parOuImpar2 = numero => {
+        if(numero % 2 === 0) {
+            return 'par'
+        } else {
+            return 'impar'
+        }
+    }
+
+    document.write(parOuImpar2(4))
+    document.write(`<br>`)
+
+    let parOuImpar3 = numero => numero % 2 === 0 ? 'par' : 'impar' // return implicito
+
+    document.write(parOuImpar3(100))
+    document.write(`<br>`)
+</script>
+<body>
+    
+</body>
+</html>
