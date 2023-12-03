@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio Contar</title>
+    <title>Vamos Contar</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
-        <div id="dados">
+        <div>
             <p>
                 Inicio:
-                <input type="number" name="comeco" id="inicio">
+                <input type="number" id="inicio">
             </p>
             <p>
-                Fim: 
-                <input type="number" name="final" id="fim">
+                Fim:
+                <input type="number" id="fim">
             </p>
             <p>
-                Passo: 
-                <input type="number" name="incremento" id="passo">
+                Passo:
+                <input type="number" id="passo">
             </p>
-            <input type="button" value="Contar" onclick="contar()">
+            <p id="btn">
+                <input type="button" value="Contar" id="butao" onclick="contar()">
+            </p>
+
         </div>
         <div id="res">
             Preparando a contagem ...
@@ -34,6 +36,6 @@
     <footer>
         <p>&copy; Flávia Santana</p>
     </footer>
-   <script src="myJS.js"></script>
+    <script src="myjs.js"></script>
 </body>
 </html>

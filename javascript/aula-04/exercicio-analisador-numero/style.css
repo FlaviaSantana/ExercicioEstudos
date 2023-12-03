@@ -1,24 +1,37 @@
 body {
-    background: rgb(107, 107, 236);
-    font: normal 15pt Arial;
-}
-
-header {
-    color: white;
+    background-color: #010D00;
+    color: #5ABF56;
     text-align: center;
+    font-size: 2em;
 }
 
 section {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    border: 4px ridge #034001;
+    box-shadow: 6px 8px #022601;
+    padding: 20px;
+    width: 650px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    text-align: left;
 }
 
-footer {
+#num {
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+}
+
+.butao {
+    background-color: #F079F2;
+    border: 3px ridge #034001;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
     color: white;
-    text-align: center;
-    font-style: italic;
+    cursor: pointer;
+}
+
+select {
+    width: 200px;
 }

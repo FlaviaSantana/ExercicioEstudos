@@ -1,0 +1,35 @@
+body {
+    background: #D9C6A3;
+    color: #242b40;
+    text-align: center;
+    font-size: 2em;
+}
+
+header {
+    margin-top: 90px;
+}
+
+section {
+    background-color: #F2B749;
+    width: 650px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 9px  #242b4071;
+}
+
+#butao {
+    background: #6374A6;
+    border: 4px ridge #F28080;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:  white;
+    cursor: pointer;
+}
+footer {
+    
+    text-align: center;
+    font-style: italic;
+}

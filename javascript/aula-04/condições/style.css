@@ -1,0 +1,50 @@
+body {
+    background-color: #15b3c0;
+    font-size: 3em;
+    
+    
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #EC4536;
+    text-shadow: 3px 2px #CCD52A;
+}
+
+section {
+    width: 700px;
+    background-color: white;
+    border: 7px ridge #EA496D;
+    color: black;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 35px;
+    
+}
+
+div {
+    text-align: center;
+}
+#vel {
+    width: 70px;
+    height: 25px;
+}
+
+#botao {
+    background: #EA496D;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    border: 3px outset #F7A31B;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
