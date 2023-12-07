@@ -49,7 +49,7 @@ function verificar() {
 
             } else {
                 res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-                img.src = 'imagens/idoso-.png'
+                img.src = 'imagens/idoso-m.png'
             }
 
         }

@@ -1,0 +1,51 @@
+body {
+    background: #4357AD;
+    font-size: 2em;
+    text-align: center;
+    color: #E1E6E1;
+}
+
+
+#bloco {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px 0px;
+      
+}
+#corpo {
+    width: 600px;
+    background: #070707;
+    border: 15px ridge #E59500;
+    color: #7FB800; 
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+#num {
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+}
+
+#butao {
+    width: 170px;
+    height: 35px;
+    font-size: 20px;
+    border: 5px ridge #4357AD;
+    background: #E59500;
+    color: #E1E6E1;
+    box-shadow: 2px 2px #E1E6E1;
+    cursor: pointer;
+}
+
+#prof {
+    z-index: 2;
+    margin-left: -200px;
+}
+
+#tab {
+    width: 170px;
+}
