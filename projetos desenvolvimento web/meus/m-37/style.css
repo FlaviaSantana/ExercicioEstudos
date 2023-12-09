@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#palavra {
+    width: 230px;
+    font-size: 25px;
+}
+
+#butao {
+    width: 140px;
+    font-size: 20px;
+}

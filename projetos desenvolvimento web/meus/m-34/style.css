@@ -1,0 +1,30 @@
+html {
+    background: rgb(233, 228, 220);
+}
+
+
+section {
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 25px;
+    background: white;
+    padding: 8px;
+    box-shadow: 2px 2px rgba(206, 197, 197, 0.445);
+}
+
+div {
+    color: rgb(61, 226, 103);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+input {
+    font-size: 30px;
+    background: rgb(61, 226, 103);
+    border: none;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}

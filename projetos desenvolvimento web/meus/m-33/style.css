@@ -1,0 +1,42 @@
+body {
+    width: 400px;
+    text-align: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.185);
+    margin: auto;
+}
+
+header {
+    margin: auto;
+}
+
+section {
+    margin: auto;
+}
+
+.ceo {
+    color: rgb(131, 128, 128);
+}
+
+i {
+    color: black;
+}
+
+#butao {
+    background: black;
+    margin-bottom: 0px;
+    padding: 8px;
+    
+    
+}
+
+button {
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover, a:hover  {
+    opacity: 0.7;
+}
