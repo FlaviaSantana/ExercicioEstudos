@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+       /*
+       class Cachorro {
+        constructor() {
+           this.cor = 'branco e marrom'
+           this.tamanho = 30
+           this.orelhas = 'grandes e caidas' 
+        }
+
+        correr() {
+            console.log ('correr')
+        }
+
+        dormir() {
+            console.log('dormir')
+        }
+
+        rosnar() {
+            console.log('rosnar')
+        }
+       }
+
+       class Passaro {
+        constructor() {
+            this.cor = 'branco e marrom'
+            this.tamanho = 10
+            this.bico = 'curto'
+        }
+
+        voar() {
+            console.log('voar')
+        }
+
+        dormir() {
+            console.log('dormir')
+        }
+       }
+
+       let cachorro = new Cachorro()
+       let passaro = new Passaro()
+
+       console.log(cachorro)
+       console.log(passaro)
+
+       */
+      // superclass ou classe pai
+      class Animal {
+        constructor() {
+            this.cor = ''
+            this.tamanho = null
+            this.peso = null
+        }
+
+        dormir() {
+            console.log('dormir')
+        }
+      }
+
+        //subclass ou classe filho
+      class Cachorro extends Animal {
+        constructor() {
+           super()
+           this.orelhas = 'grandes e caidas' 
+        }
+
+        correr() {
+            console.log ('correr')
+        }
+
+        
+
+        rosnar() {
+            console.log('rosnar')
+        }
+       }
+
+       class Passaro extends Animal {
+        constructor() {
+           super()
+            this.bico = 'curto'
+        }
+
+        voar() {
+            console.log('voar')
+        }
+
+       
+       }
+
+       // add nova class
+
+       class Papagaio extends Passaro {
+        constructor() {
+            //this.cor = 'verde'
+            //this.tamanho = 20
+            super()
+            //this.bico = 'medio'
+            this.sabeFalar = true
+        }
+        falar() {
+            console.log('falar')
+        }
+       }
+
+       let cachorro = new Cachorro()
+       let passaro = new Passaro()
+       let papagaio = new Papagaio()
+
+       //console.log(cachorro)
+       //console.log(passaro)
+
+       /*
+       cachorro.dormir()
+       passaro.dormir()
+       papagaio.falar()
+       papagaio.dormir()
+       papagaio.voar()
+       */
+
+       console.log(cachorro)
+       console.log(passaro)
+       console.log(papagaio)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
