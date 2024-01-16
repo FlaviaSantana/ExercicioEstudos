@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // destructuring -> retira valores de dentro de uma estrutura que pode ser um arry ou um objeto
+
+        // arry
+        let frutas = ['abacaxi', 'uva', 'pera', 'mamao' ]
+
+        let [a, b, , c] = frutas
+
+        console.log(a, b, c)
+
+        let frutas1 = ['abacaxi', 'uva', 'pera', 'mamao' ]
+
+        let [a1, b1 = 'abacate', c1, d1, e1 = 'banana'] = frutas1 // b1 nao ira funcionar pois a posicao ja existe
+
+        console.log(a1, b1, c1, d1, e1)
+
+        let coisas = [['abacaxi', 'uva', 'pera', 'mamao'], ['jose', 'maria']]
+        
+        let [, [,n2]] = coisas
+        let [[, , n3]]  = coisas
+        console.log(n2)
+        console.log(n3)
+
+        //para objetos
+
+        let produto = {
+            descricao: 'Notbook',
+            preco: 1800,
+            detalhes: {
+                fabricante: 'abc',
+                modelo: 'xyz'
+            }
+        }
+
+            //token varia
+            //array => []
+            //objeto => {}
+
+       // let {descricao, preco} = produto
+       //console.log(descricao, preco)
+
+      // let {descricao: d, preco: p} = produto
+       // console.log(d, p)
+
+      // let {descricao: d, preco: p, desconto = 5} = produto
+       // console.log(d, p, desconto)
+
+       //let {detalhes: {fabricante, modelo}} = produto
+       //console.log(fabricante, modelo)
+
+       let {detalhes: {fabricante: f, modelo = 'Nao informado'}} = produto // se modelo for = underfine aparecera 'nao informado'
+       console.log(f, modelo)
+
+       //-------------------------------------------
+
+       // array
+
+       let arr = [10, 20, 30, 40]
+
+       function teste(a, b) {
+        console.log(a, b)
+       }
+
+       teste(arr[0], arr[1])
+
+       // ou
+
+       let arr2 = [10, 20, 30, 40]
+
+       function teste2([a2, b2, , c2, d2 = 100]) {
+        console.log(a2, b2, c2, d2)
+       }
+
+       teste2(arr2)
+
+       // objeto
+
+       let obj = {
+        a3: 10,
+        b3: 20,
+        c3: 30,
+        d3: 40
+       }
+
+       function teste3({a3: x, d3, z = 50}) {
+            console.log(x, d3, z)
+       }
+
+        teste3(obj)
+
+        //----------------------------------------------
+
+        // destructuring + rest
+
+        let brr = [100, 200, 300, 400]
+
+        let [a4, ...resto] = brr
+
+        console.log(a4)
+        console.log(resto)
+
+        let objeto = {
+            a5: 1000, b5: 2000, c5: 3000, d5: 4000
+        }
+
+        let {a5, ...z5} = objeto
+
+        console.log(a5)
+        console.log(z5)
+
+        //
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // ... -> spread = espalhar
+
+        // string
+        let tituloArtigo = 'como utilizar o operador rest/spread'
+
+        console.log(tituloArtigo)
+        console.log(...tituloArtigo)
+        console.log([...tituloArtigo])
+
+        // arrays
+        let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TupyScript e Angular 4']
+        let listaCursos2 = ['Multiplataforma Android/IOS', 'Introducao ao GNU/Linux']
+        let listaCursosCompleto = ['web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2] //pode colocar em qualquer posicao
+
+        console.log(listaCursosCompleto)
+
+        //objetos
+        let pessoa = {nome: 'joao', idade:27}
+        let clone = {endereco: 'rua abc', ...pessoa}
+
+        console.log(clone)
+
+
+
+        // ... -> rest = juntar
+
+
+        function soma(...param) {
+            let resultado = 0
+
+            console.log(param)
+
+            param.forEach(v => resultado += v)
+            return resultado
+        }
+
+        console.log(soma(3, 8, 5, 7, 8, 10))
+
+        function multiplicacao(m, ...p) {
+            console.log(m)
+            let resultado = 0
+            console.log(p)
+
+            p.forEach(z => resultado += m * z)
+
+            return resultado
+        }
+
+       console.log(multiplicacao(5, 7, 12, 3, 49))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
